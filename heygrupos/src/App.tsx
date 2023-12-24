@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {createBrowserRouter} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Signin from "./pages/Signin";
+import SiginUp from "./pages/SiginUp";
+import Messages from "./pages/Messages";
+import ChatRoom from "./pages/ChatRoom";
 
-export default App;
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <ChatRoom/>,
+  },
+  {
+    path: "/messages",
+    element: <Messages/>
+  },
+  {
+    path: "/login",
+    element: <Signin/>
+  },
+  {
+    path: "/siginup",
+    element: <SiginUp/>
+  }
+]);
+
+export default router;
