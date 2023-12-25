@@ -1,0 +1,28 @@
+.cardChat{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carItem{
+    width: 80%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: var(--white--dark);
+    cursor: pointer;
+}
+
+.nameGrupo{
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+}
+
+.msg{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ccc;
+}
