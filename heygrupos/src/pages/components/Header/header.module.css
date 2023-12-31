@@ -12,5 +12,14 @@
 }
 
 .titulo{
-    margin-left: 20px;
+    margin-left: 18px;
+}
+.titulo svg{
+    margin: 0 5px;
+    color: #fff;
+}
+
+.lupa{
+    margin-right: 20px;
+    color: #fff;
 }

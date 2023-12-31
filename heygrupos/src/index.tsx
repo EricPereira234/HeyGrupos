@@ -4,6 +4,9 @@ import './index.css';
 import router from './App';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider } from "react-router-dom";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const root = ReactDOM.createRoot(
@@ -11,6 +14,19 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+    <ToastContainer
+    position="top-right"
+    autoClose={5000}
+    hideProgressBar={false}
+    newestOnTop={false}
+    closeOnClick
+    rtl={false}
+    pauseOnFocusLoss
+    draggable
+    pauseOnHover
+    theme="colored"
+  />
+
     <RouterProvider router={router} />
   </React.StrictMode>
 );
