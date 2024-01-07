@@ -17,7 +17,7 @@ export default function ChatRoom() {
                  <label className={styles.msg} >fala eric tudo bem?</label>
                </div>
             </div>
-            {modal? (<Modal/>):(<Button />)}
+            {modal? <Modal closeModal={()=>setModal(false)} /> : <Button playModal={()=> setModal(true)} /> }
     
         </>
     )

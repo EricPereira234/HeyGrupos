@@ -1,0 +1,41 @@
+
+.cardGeral{
+    width: 100vw;
+    height: 100vh;
+    z-index: 900;
+    margin-top: -70px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.cardModal{
+    width: 50%;
+    height: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var( --white);
+}
+
+.input{
+    width: 80%;
+    height: 30px;
+    margin: 5px 0;
+    padding: 2px 5px;
+    border: none;
+    background-color: var(--color-inputs);
+}
+
+.button{
+    width: 80%;
+    height: 30px;
+    padding: 5px 0;
+    border: none;
+    color: var(--white);
+    background-color: var( --blue);
+}
