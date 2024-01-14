@@ -10,7 +10,7 @@ interface ButtonProps {
 export default function Button({playModal}:ButtonProps){
     return(
         <div className={styles.cardButtonModal} >
-          < FaPlusCircle size={25}  onClick={playModal} />
+          < FaPlusCircle size={30}  onClick={playModal} />
         </div>
     )
 }
